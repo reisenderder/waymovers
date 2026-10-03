@@ -1,0 +1,54 @@
+$border-radius: 5px;
+
+$colors: (
+	primary: rgb(138, 0, 0),
+	primary-dark: rgb(100, 0, 0),
+	dark: rgb(28, 28, 28),
+	shade-light: rgb(255, 236, 236),
+	shade-light-opacity: rgb(255, 236, 236),
+	text-color: rgb(28, 28, 28),
+	text-color-light: rgba(255, 255, 255, 0.7),
+);
+
+$transition: (
+	color: color 0.3s ease-out,
+	bg-color: background-color 0.3s ease-out,
+	margin: margin 0.3s ease-in-out,
+	right: right 0.3s ease-in-out,
+	padding: padding 0.3s ease-out,
+	transform: transform 0.3s ease-in-out,
+	opacity: opacity 0.3s ease-out,
+	fill: fill 0.3s ease-out,
+);
+
+@function color($val) {
+	@return map-get($colors, $val);
+}
+
+@function transition($val) {
+	@return map-get($transition, $val);
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 300;
+	src: url("../fonts/poppins-light.woff2");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 400;
+	src: url("../fonts/poppins-regular.woff2");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 500;
+	src: url("../fonts/poppins-medium.woff2");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 700;
+	src: url("../fonts/poppins-bold.woff2");
+}

@@ -1,0 +1,32 @@
+footer
+{
+  background-color: color(dark);
+  color: color(text-color-light);
+
+  h4
+  {
+    margin-bottom: 2em;
+  }
+
+  .border-top
+  {
+    border-color: color(text-color-light);
+  }
+
+  ul
+  {
+    list-style: none;
+  }
+
+  a 
+  {
+    color: color(text-color-light);
+    transition: transition(color);
+
+    &:hover
+    {
+      color: white;
+    }
+  }
+
+}
